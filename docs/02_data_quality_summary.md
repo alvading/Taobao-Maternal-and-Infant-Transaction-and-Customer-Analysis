@@ -74,3 +74,19 @@ include a `<100` sensitivity comparison.
 
 Age and gender analysis is descriptive of the matched subset only and does not
 support conclusions about all purchasing users.
+
+## 分析模型对账 | Analytical-model reconciliation
+
+| 检查 Check | 实际结果 Actual | 状态 Status |
+|---|---:|---|
+| `dim_baby` 行数 | 953 | PASS |
+| `fact_trade` 行数 | 29,971 | PASS |
+| 不同代理主键 / Distinct surrogate keys | 29,971 | PASS |
+| `item_property` NULL | 144 | PASS |
+| 总购买件数 / Total units | 76,250 | PASS |
+| 日期范围 / Date range | 2012-07-02–2015-02-05 | PASS |
+
+模型转换未丢行，关键分布、总量和日期边界与暂存层一致。
+
+The model conversion loses no rows and preserves key distributions, totals,
+and date boundaries from staging.

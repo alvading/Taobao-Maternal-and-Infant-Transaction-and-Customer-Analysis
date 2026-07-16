@@ -9,13 +9,13 @@ CREATE DATABASE IF NOT EXISTS mum_baby_analysis
 
 USE mum_baby_analysis;
 
-CREATE TABLE stg_baby_raw (
+CREATE TABLE IF NOT EXISTS stg_baby_raw (
     user_id  VARCHAR(20),
     birthday VARCHAR(20),
     gender   VARCHAR(10)
 );
 
-CREATE TABLE stg_trade_raw (
+CREATE TABLE IF NOT EXISTS stg_trade_raw (
     user_id     VARCHAR(20),
     auction_id  VARCHAR(30),
     cat_id      VARCHAR(20),

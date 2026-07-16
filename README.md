@@ -14,7 +14,7 @@ to analyze sales trends, category structure, purchase frequency, and repeat
 purchase. Final deliverables will include a Power BI dashboard, bilingual
 report, and portfolio website case study.
 
-> **状态 / Status:** 数据质量与分析建模阶段 / Data quality and analytical modeling
+> **状态 / Status:** 数据模型完成，进入业务分析 / Analytical model complete; business analysis in progress
 
 ## 数据 | Data
 
@@ -68,15 +68,37 @@ business context, metric definitions, analytical steps, and limitations.
 See the [data-quality summary](docs/02_data_quality_summary.md) for evidence and
 modeling decisions.
 
+## 当前分析结果 | Current analysis results
+
+- 29,971 条交易记录、29,944 个购买用户、76,250 件；
+- 人均交易记录 1.0009，每条记录平均 2.54 件；
+- `<100` 件记录平均 1.53 件；
+- 65 条高数量记录贡献总件数的 39.99%，因此所有销量结论需要敏感性对照。
+- 仅 24 个用户发生跨日复购，复购率为 0.0802%。
+
+- 29,971 trade rows, 29,944 purchasing users, and 76,250 units;
+- 1.0009 trade rows per user and 2.54 units per row overall;
+- 1.53 units per row below 100 units;
+- 65 high-quantity rows contribute 39.99% of units, requiring sensitivity views.
+- only 24 users purchase on multiple dates, a cross-day repeat rate of 0.0802%.
+
+详见[分析结果](docs/03_analysis_results.md)。
+
+See [analysis results](docs/03_analysis_results.md).
+
 ## 仓库结构 | Repository structure
 
 ```text
 ├── README.md
 ├── docs/
 │   ├── 01_project_overview.md
-│   └── 02_data_quality_summary.md
+│   ├── 02_data_quality_summary.md
+│   └── 03_analysis_results.md
 └── sql/
-    └── 01_setup.sql
+    ├── 01_setup.sql
+    ├── 02_model.sql
+    ├── 03_overview_kpis.sql
+    └── 04_customer_frequency.sql
 ```
 
 后续只在分析模块完成并验证后添加合并后的成品 SQL、最终报告和看板材料。课堂
