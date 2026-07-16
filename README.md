@@ -94,14 +94,19 @@ See [analysis results](docs/03_analysis_results.md).
 │   ├── 01_project_overview.md
 │   ├── 02_data_quality_summary.md
 │   └── 03_analysis_results.md
-└── sql/
-    ├── 01_setup.sql
-    ├── 02_model.sql
-    ├── 03_overview_kpis.sql
-    ├── 04_customer_frequency.sql
-    ├── 05_time_trends.sql
-    ├── 06_category_analysis.sql
-    └── 07_demographic_supplement.sql
+├── sql/
+│   ├── 01_setup.sql
+│   ├── 02_model.sql
+│   ├── 03_overview_kpis.sql
+│   ├── 04_customer_frequency.sql
+│   ├── 05_time_trends.sql
+│   ├── 06_category_analysis.sql
+│   └── 07_demographic_supplement.sql
+└── website/
+    ├── app/
+    │   ├── page.tsx
+    │   └── globals.css
+    └── public/
 ```
 
 后续只在分析模块完成并验证后添加合并后的成品 SQL、最终报告和看板材料。课堂
@@ -115,8 +120,8 @@ step-by-step outputs remain outside the public portfolio repository.
 
 - MySQL 9.7.1
 - Navicat
-- HTML/CSS/JavaScript（交互看板与作品网站 / interactive dashboard and portfolio site）
-- Apache ECharts（交互图表 / interactive charts，计划 / planned）
+- React、HTML、CSS、JavaScript（交互看板与作品网站 / interactive dashboard and portfolio site）
+- CSS 数据图形与响应式交互 / CSS data graphics and responsive interactions
 
 ## 作者 | Author
 
