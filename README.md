@@ -16,6 +16,10 @@ report, and portfolio website case study.
 
 > **状态 / Status:** 数据模型完成，进入业务分析 / Analytical model complete; business analysis in progress
 
+![BI dashboard overview](assets/figures/06_bi_dashboard.png)
+
+*静态 BI 看板总览 / Static BI dashboard overview*
+
 ## 数据 | Data
 
 | 数据表 Table | 数据量 Rows | 主要字段 Key fields |
@@ -105,7 +109,7 @@ map.
 ├── assets/figures/
 ├── data/
 │   └── pareto_category_segments.csv
-├── sql/
+└── sql/
 │   ├── 01_setup.sql
 │   ├── 02_model.sql
 │   ├── 03_overview_kpis.sql
@@ -113,11 +117,6 @@ map.
 │   ├── 05_time_trends.sql
 │   ├── 06_category_analysis.sql
 │   └── 07_demographic_supplement.sql
-└── website/
-    ├── app/
-    │   ├── page.tsx
-    │   └── globals.css
-    └── public/
 ```
 
 后续只在分析模块完成并验证后添加合并后的成品 SQL、最终报告和看板材料。课堂
@@ -131,8 +130,7 @@ step-by-step outputs remain outside the public portfolio repository.
 
 - MySQL 9.7.1
 - Navicat
-- React、HTML、CSS、JavaScript（交互看板与作品网站 / interactive dashboard and portfolio site）
-- CSS 数据图形与响应式交互 / CSS data graphics and responsive interactions
+- Python / Pillow（报告图表 / report figures）
 
 ## 作者 | Author
 

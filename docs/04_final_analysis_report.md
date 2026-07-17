@@ -41,6 +41,13 @@ Key findings:
 5. Cross-day repeat purchase is only 0.0802%, while demographics cover 3.18%
    of users, limiting RFM, repeat prediction, and population-level inference.
 
+![BI看板总览](../assets/figures/06_bi_dashboard.png)
+
+*图0：核心交易规模、月度活跃度、数量口径审计、一级品类、增长贡献和二八结构的
+静态 BI 看板总览。 / Figure 0. Static BI overview of transaction scale,
+monthly activity, quantity audit, categories, growth contribution, and Pareto
+structure.*
+
 ## 2. 项目背景与业务问题 | Background and business questions
 
 母婴商品往往受到婴幼儿阶段、品类刚需和促销季节影响，但本数据缺少价格、收入、
