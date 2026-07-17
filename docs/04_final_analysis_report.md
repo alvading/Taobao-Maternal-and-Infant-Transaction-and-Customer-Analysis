@@ -159,8 +159,19 @@ units, while retaining raw units as an auditable secondary view.
 
 ![一级品类指标对比](../assets/figures/03_category_comparison.png)
 
-*图3：按交易记录、原始件数和敏感性件数比较六个一级品类。 / Figure 3.
-Top-level categories under three metrics.*
+*图3：一级品类份额矩阵。每一行固定代表一个 `cat1`，四列依次展示交易记录占比、
+原始件数占比、敏感性件数占比和品类内部高数量件数占比，所有条形采用统一的
+0–60%刻度。 / Figure 3. Top-level category share matrix using a shared 0–60%
+scale across four directly labeled measures.*
+
+绿色重点行标出交易覆盖最广的核心品类 `50008168`；橙色重点行标出原始件数受
+高数量记录影响最明显的 `28` 和 `50014815`。其余三个品类使用水平分隔线保留
+完整比较背景，但不与核心发现争夺视觉注意力。
+
+The green focus row marks the core activity leader, while orange focus rows
+mark the two categories most affected by high quantities. Neutral separator
+lines keep the remaining categories easy to follow without competing with the
+main findings.
 
 `50008168` 贡献 41.69% 的交易记录和 32.37% 的敏感性件数，是覆盖最广、表现
 最稳定的一级品类。`28` 和 `50014815` 的高数量件数分别占自身原始件数的
